@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Management System</title>
+  
+  <!-- Import Map for JS modules -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://aistudiocdn.com/react@^19.2.0",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/",
+      "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+    }
+  }
+  </script>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#006a6a',
+            'on-primary': '#ffffff',
+            'primary-container': '#74f8f8',
+            'on-primary-container': '#002020',
+            secondary: '#4a6363',
+            'on-secondary': '#ffffff',
+            'secondary-container': '#cce8e7',
+            'on-secondary-container': '#051f1f',
+            tertiary: '#4d607c',
+            'on-tertiary': '#ffffff',
+            'tertiary-container': '#d5e4ff',
+            'on-tertiary-container': '#061c36',
+            error: '#ba1a1a',
+            'on-error': '#ffffff',
+            'error-container': '#ffdad6',
+            'on-error-container': '#410002',
+            background: '#fafdfc',
+            'on-background': '#191c1c',
+            surface: '#fafdfc',
+            'on-surface': '#191c1c',
+            'surface-variant': '#dae5e4',
+            'on-surface-variant': '#3f4948',
+            outline: '#6f7979',
+            'outline-variant': '#bfc9c8',
+            shadow: '#000000',
+            scrim: '#000000',
+            'inverse-surface': '#2e3131',
+            'inverse-on-surface': '#eff1f1',
+            'inverse-primary': '#53dbdb',
+            'surface-dim': '#dadedd',
+            'surface-bright': '#fafdfc',
+            'surface-container-lowest': '#ffffff',
+            'surface-container-low': '#f4f7f7',
+            'surface-container': '#eeeff0',
+            'surface-container-high': '#e8e9e9',
+            'surface-container-highest': '#e2e4e4',
+            danger: '#dc2626',
+            'on-danger': '#ffffff',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Print Styles -->
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .printable-area, .printable-area * {
+        visibility: visible;
+      }
+      .printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+
+</head>
+<body class="bg-background">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Retail Management System",
+  "description": "A comprehensive Point of Sale (POS) and Inventory Management system designed for retail. Features include advanced stock control, sales and returns processing, customer and supplier management, in-depth reporting, and role-based access simulation. Built with React and powered by Gemini for AI-driven features.",
+  "requestFramePermissions": []
+}
